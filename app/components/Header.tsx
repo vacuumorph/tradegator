@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-
 interface HeaderProps {
   search: string;
   onSearchChange: (value: string) => void;
@@ -14,8 +12,9 @@ export default function Header({ search, onSearchChange, totalTools, filteredCou
     <header className="border-b border-[var(--border)] bg-[var(--surface)] sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
         <div className="flex items-center gap-3 flex-shrink-0">
-          <div className="w-10 h-10 rounded-xl overflow-hidden">
-            <Image src="/logo.jpg" alt="Tradegator" width={40} height={40} className="w-full h-full object-cover" />
+          <div className="w-10 h-10 rounded-xl overflow-hidden flex-shrink-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.jpg" alt="Tradegator" width={40} height={40} className="w-full h-full object-cover" />
           </div>
           <div>
             <h1 className="text-white font-bold text-lg leading-none">Tradegator</h1>
