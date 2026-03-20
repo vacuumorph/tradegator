@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tradegator
 
-## Getting Started
+Agregador de ferramentas de comércio exterior. Acesso rápido às principais plataformas usadas por importadores, exportadores, despachantes aduaneiros e analistas de comex — tudo em um só lugar.
 
-First, run the development server:
+## Sobre o projeto
+
+O Tradegator organiza as ferramentas mais utilizadas no dia a dia do comércio exterior em categorias, com filtro e busca para acesso rápido.
+
+### Categorias
+
+| Categoria | Descrição |
+|---|---|
+| 🛃 Sistemas Aduaneiros | Siscomex, Portal Único, Mantra, Carga Online |
+| 📋 Classificação Fiscal | NCM, TEC, TIPI, OSIS |
+| 💱 Câmbio | PTAX, Banco Central, cotações em tempo real |
+| 🚢 Logística e Rastreamento | Track & Trace, Maersk, MSC, CMA CGM |
+| ⚖️ Legislação e Órgãos | Receita Federal, MDIC, SECEX, DOU |
+| 📜 Licenças e Certificações | ANVISA, MAPA, INMETRO, IBAMA |
+| 🔄 Regimes Especiais | Drawback, Siscoserv, RECOF, Repetro |
+| 📊 Estatísticas e Inteligência | Comex Stat, AliceWeb, Trade Map, UN Comtrade |
+
+## Stack
+
+- [Next.js 14](https://nextjs.org) — App Router
+- [TypeScript](https://www.typescriptlang.org)
+- [Tailwind CSS](https://tailwindcss.com)
+- Deploy: [Vercel](https://vercel.com)
+
+## Rodando localmente
 
 ```bash
+# Instalar dependências
+npm install
+
+# Iniciar servidor de desenvolvimento
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Acesse [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## Contribuindo
 
-To learn more about Next.js, take a look at the following resources:
+Quer sugerir uma nova ferramenta ou categoria? Abra uma [issue](https://github.com/vacuumorph/tradegator/issues) ou envie um pull request.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Licença
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT
